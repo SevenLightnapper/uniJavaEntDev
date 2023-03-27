@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <name>universityJavaEnterpriseDevelopment</name>
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>uni.ent.dev</groupId>
+    <artifactId>uniJavaEntDev</artifactId>
+    <version>1.0-2023.03.28-Java-Core</version>
+    <packaging>pom</packaging>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <!-- other plugin versions -->
+        <version.ejbVersion>3.2</version.ejbVersion>
+        <version.ejb.plugin>2.3</version.ejb.plugin>
+        <!-- maven-compiler-plugin -->
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <version.compile.plugin>3.7.0</version.compile.plugin>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <!-- TO BE ADDED -->
+        </dependencies>
+    </dependencyManagement>
+
+    <profiles>
+        <!-- might be added -->
+    </profiles>
+
+    <build>
+        <finalName>${project.artifactId}</finalName>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>${version.compile.plugin}</version>
+                    <configuration>
+                        <source>${maven.compiler.source}</source>
+                        <target>${maven.compiler.target}</target>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-ejb-plugin</artifactId>
+                    <version>${version.ejb.plugin}</version>
+                    <configuration>
+                        <ejbVersion>${version.ejbVersion}</ejbVersion>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
+
+</project>
