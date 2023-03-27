@@ -1,0 +1,6 @@
+### private ###
+**/target
+
+### IntelliJ IDEA ###
+**/*.iml
+**/.idea
