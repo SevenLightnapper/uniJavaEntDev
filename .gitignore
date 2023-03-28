@@ -1,5 +1,6 @@
 ### private ###
 **/target
+**/resources/docs
 
 ### IntelliJ IDEA ###
 **/*.iml
