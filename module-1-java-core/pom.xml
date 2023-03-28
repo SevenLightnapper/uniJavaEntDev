@@ -22,4 +22,27 @@
         <module>task-5-inner-classes</module>
     </modules>
 
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>uni.ent.dev.module-1-java-core</groupId>
+                <artifactId>task-2-data-types-operators</artifactId>
+                <scope>compile</scope>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>uni.ent.dev.module-1-java-core</groupId>
+                <artifactId>task-3-classes-methods</artifactId>
+                <scope>compile</scope>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>uni.ent.dev.module-1-java-core</groupId>
+                <artifactId>task-5-inner-classes</artifactId>
+                <scope>compile</scope>
+                <version>${project.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
 </project>
