@@ -17,7 +17,9 @@
     <packaging>pom</packaging>
 
     <modules>
-
+        <module>task-2-data-types-operators</module>
+        <module>task-3-classes-methods</module>
+        <module>task-5-inner-classes</module>
     </modules>
 
 </project>
